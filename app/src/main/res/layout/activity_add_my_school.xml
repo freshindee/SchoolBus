@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg_white"
+tools:context="com.fitscorp.apps.indika.schoolbus.login.AddMySchoolActivity"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    tools:context=".login.BusLoginActivity">
+
+    <!-- Login progress -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:textColor="@color/header_text"
+        android:fontFamily="sans-serif-black"
+        android:textSize="25sp"
+        android:text="Add My School"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_text"
+        android:fontFamily="sans-serif-black"
+        android:textSize="25sp"
+        android:text="Location"/>
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Enter School Address"/>
+
+            <EditText
+                android:id="@+id/txt_schoo_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="School Address"
+                android:background="@color/white"
+                android:textColorHint="@color/grey"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="saveSchool"
+                android:text="SEND"
+                android:textStyle="bold" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20sp"
+                    android:text="Quick Response\n 0773771925"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
+
+</ScrollView>

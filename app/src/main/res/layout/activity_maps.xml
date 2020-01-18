@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fitscorp.apps.indika.schoolbus.ShowBus_MainActivity"
+    android:fitsSystemWindows="true">
+
+
+
+
+<com.google.android.gms.maps.MapView
+    android:id="@+id/mapView"
+    android:apiKey="AIzaSyAANCgdv0SlyJ-iwFtSgyzK3Jd6X_K5Fcw"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent" />
+
+
+   <ImageView
+       android:id="@+id/img_menu"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:layout_margin="10dp"
+       android:visibility="gone"
+       android:onClick="contactUs"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:background="@drawable/menu"/>
+   <ImageButton
+       android:id="@+id/img_profile"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:layout_margin="10dp"
+       android:onClick="editProfile"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentRight="true"
+       android:background="@drawable/user"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/white"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/layout_daily_tip">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/lay_driver_details">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_bus_number"
+                android:text="Bus Number : "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_driver_name"
+                android:text="Driver Name : "/>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:onClick="callToDriver"
+            android:background="@drawable/call"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/txt_bus_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/lay_driver_details"
+        android:layout_centerHorizontal="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_bus_status">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="contactUs"
+        android:background="@drawable/contact"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:text="@string/click_here_to_refresh"
+            android:padding="4dp"/>
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="25dp"
+            android:onClick="RefreshGPS"
+            android:background="@drawable/refresh"/>
+    </LinearLayout>
+   <ImageButton
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_marginBottom="25dp"
+       android:layout_marginRight="20dp"
+       android:layout_centerVertical="true"
+       android:layout_alignParentRight="true"
+       android:onClick="sendMessage"
+       android:background="@drawable/mes_driver"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

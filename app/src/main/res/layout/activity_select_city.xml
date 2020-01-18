@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:background="@color/white"
+                tools:context="com.fitscorp.apps.indika.schoolbus.login.SelectCityActivity">
+
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:background="#f5f5f5"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true">
+
+        <!--Back Button -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#f5f5f5"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+        >
+            <LinearLayout
+                    android:id="@+id/btn_backImgBtn_layout"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/btn_backImgBtn"
+                        android:background="@drawable/back_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--Top Line.. -->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/whait_bg"
+                  android:orientation="vertical">
+
+        <EditText
+                android:id="@+id/edt_search_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:textSize="10dp"
+                android:textColor="@color/text_color_quinary"
+                android:textColorHint="@color/text_color_quinary"
+                android:background="@drawable/whatsonmind_shadow"
+                android:drawableEnd="@drawable/search_icon"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="11dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawableRight="@drawable/search_icon"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_recycler"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

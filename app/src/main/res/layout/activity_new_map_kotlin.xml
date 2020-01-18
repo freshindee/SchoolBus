@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.fitscorp.apps.indika.schoolbus.firebase.NewMapKotlinActivity">
+
+<fragment
+    android:id="@+id/supportMap"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="spartons.com.frisbeeGo.fragments.MapFragment" />
+
+<TextView
+    android:id="@+id/totalOnlineDrivers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_marginEnd="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="40dp"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="@string/total_online_drivers"
+    android:textColor="#000000"
+    android:textSize="15sp" />
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true">
+
+    <LinearLayout
+            android:id="@+id/lay_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    android:id="@+id/txt_driver_status"
+                    android:text="Bus Status : Picked"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/txt_bus_number"
+                    android:text="Bus Number : 234"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/txt_driver_name"
+                    android:text="Driver Name : Kamal Avishka"/>
+        </LinearLayout>
+
+        <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:onClick="callToDriver"
+                android:background="@drawable/call"
+        />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+            android:id="@+id/lay_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+        <ImageButton
+                android:id="@+id/img_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="editProfile"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/user_green"/>
+
+        <ImageButton
+                android:id="@+id/img_menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="contactUs"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/contact"/>
+
+        <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="sendMessage"
+                android:background="@drawable/mes_driver"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

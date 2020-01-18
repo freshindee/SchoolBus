@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">SchoolBus</string>
+    <string name="title_activity_maps">Schooly</string>
+
+
+    <string name="txt_register_fillthe_details">Please fill the details below</string>
+    <string name="txt_register_account">Parent Registration</string>
+    <string name="txt_register_child">Add My Child</string>
+    <string name="txt_register">Live Happy :)</string>
+    <string name="hint_entermobilenumber">Enter mobile number</string>
+
+    <string name="toast_firstname_empty">Name can not be empty</string>
+    <string name="toast_firstname_onlycharacters">Name can only contains characters</string>
+
+    <string name="toast_city_empty">Name can not be empty</string>
+
+    <string name="toast_lastname_empty">Phone number can not be empty</string>
+    <string name="toast_lastname_onlycharacters">Last name can only contains characters</string>
+    <string name="toast_empty_feilds">Please do not leave any field blank</string>
+
+    <string name="toast_gender_empty">Please select gender</string>
+    <string name="toast_birthday_empty">Birthday can not be empty</string>
+    <string name="toast_email_empty">Email can not be empty</string>
+
+    <string name="toast_email_wrong_format">Wrong email format</string>
+
+    <string name="toast_no_internet">toast_no_internet</string>
+    <string name="enter_message">Enter your message here</string>
+    <string name="absence_msg">Is child absence today</string>
+    <string name="click_here_to_refresh">Click here to view bus</string>
+    <string name="lbl_district">District</string>
+    <string name="lbl_school">School</string>
+    <string name="select_district">Select District</string>
+    <string name="grade">Enter Grade Here</string>
+    <string name="name">Enter Name Here</string>
+    <string name="total_online_drivers">Total Online Drivers</string>
+
+    <string name="need_location">Enable GPS SERVICE</string>
+    <string name="location_content">This app wants to change your device settings use GPS,Wi-Fi and cell networks for
+        your location
+    </string>
+    <string-array name="disctrict">
+        <item>earth</item>
+        <item>moon</item>
+    </string-array>
+</resources>

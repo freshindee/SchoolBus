@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg_white"
+tools:context="com.fitscorp.apps.indika.schoolbus.login.ContactActivity"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    tools:context=".login.BusLoginActivity">
+
+    <LinearLayout
+        android:id="@+id/toplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="CONTACT SCHOOOLY"/>
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="Send Message to Schoooly App"/>
+
+            <EditText
+            android:id="@+id/txt_message"
+            android:inputType="textMultiLine"
+            android:hint="Enter your message here"
+            android:lines="8"
+            android:minLines="6"
+            android:gravity="top|left"
+            android:layout_margin="20dp"
+            android:padding="15dp"
+            android:textSize="12sp"
+            android:maxLines="10"
+            android:background="@color/white"
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            />
+
+            <!--<EditText-->
+                <!--android:id="@+id/txt_message"-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_margin="20dp"-->
+                <!--android:hint="Enter your message here"-->
+                <!--android:background="@color/white"-->
+                <!--android:textColorHint="@color/grey"-->
+                <!--android:lines="4"-->
+                <!--android:padding="10dp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textSize="12sp"-->
+                <!--android:inputType="text"-->
+                <!--android:maxLines="1"-->
+                <!--android:singleLine="true" />-->
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="sendMessage"
+                android:text="SEND"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+</ScrollView>

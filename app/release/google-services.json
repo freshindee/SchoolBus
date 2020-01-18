@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1012746246940",
+    "firebase_url": "https://schooly-parents-app.firebaseio.com",
+    "project_id": "schooly-parents-app",
+    "storage_bucket": "schooly-parents-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012746246940:android:c9531d8d6cec6a62",
+        "android_client_info": {
+          "package_name": "com.schooly.apps.parents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012746246940-npi3hpvi6nuqfvke5sqlm1mjblq7esmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpY0MU8Bxb1THxwjrumSyVKgWXCh_CUsE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

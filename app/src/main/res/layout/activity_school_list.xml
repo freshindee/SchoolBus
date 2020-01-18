@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/whait_bg"
+android:orientation="vertical"
+tools:context=".ShowSchools">
+
+<LinearLayout
+    android:id="@+id/toplay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_alignParentTop="true"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Select Your School"/>
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toplay"
+            android:padding="10dp"
+            android:id="@+id/recycler_school_list"/>
+    <ImageView
+        android:id="@+id/btn_add_new_bus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/add_new_school"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

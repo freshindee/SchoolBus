@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_school_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:text="Isipathana College"/>
+
+            <TextView
+                android:id="@+id/txt_child_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-normal"
+                android:textSize="14sp"
+                android:textColor="@color/dark"
+                android:text="Ravindu Pinsara"/>
+
+            <TextView
+                android:id="@+id/txt_child_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-normal"
+                android:textSize="14sp"
+                android:textColor="@color/dark"
+                android:text="No 272, Weerasekara Lane, Pepiliyana"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_accept"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/top_view"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/accept_button"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

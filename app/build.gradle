@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'com.github.dcendents.android-maven'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.schooly.apps.parents"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 8
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        useLibrary 'org.apache.http.legacy'
+    }
+
+//    signingConfigs {
+//        debug {
+//            storeFile file("debug.keystore")
+//        }
+//        release {
+//            storeFile file("schooly.jks")
+//            storePassword "RedPrimio_cbd_5157"
+//            keyAlias "schooly"
+//            keyPassword "RedPrimio_cbd_5157"
+//        }
+//    }
+//
+//    buildTypes {
+//        debug {
+//            minifyEnabled false
+//            signingConfig signingConfigs.debug
+//            buildConfigField "String", "BASE_URL", '"https://livehappy.ayubo.life/api.ayubo.life/public/api/ehr/v1/"'
+//        }
+//        release {
+////            debuggable true
+//            minifyEnabled false
+//            signingConfig signingConfigs.release
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            buildConfigField "String", "BASE_URL", '"https://livehappy.ayubo.life/api.ayubo.life/public/api/ehr/v1/"'
+//        }
+//    }
+
+
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    // implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    //  implementation 'com.android.support:design:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    testImplementation 'junit:junit:4.12'
+    // androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    //androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    // implementation 'com.android.support:recyclerview-v7:28.0.0'
+    // implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    // implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.mikhaellopez:lazydatepicker:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation('org.apache.httpcomponents:httpmime:4.3.6') {
+        exclude module: 'httpclient'
+    }
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.5'
+
+    // implementation 'com.github.aliumujib:Nibo:2.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    implementation 'com.afollestad.material-dialogs:core:2.8.1'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-gcm:16.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-database:16.1.0'
+// Add dependency
+    // implementation 'com.crashlytics.sdk.android:crashlytics:2.9.9'
+    implementation 'com.google.android.libraries.places:places:1.1.0'
+    //  implementation 'com.google.android.gms:play-services-maps:15.0.0'
+    // implementation 'com.google.android.gms:play-services-gcm:15.0.2'
+    implementation 'com.google.android.gms:play-services-places:16.1.0'
+    // implementation 'com.google.android.gms:play-services-location:15.0.0'
+
+//    implementation 'com.google.firebase:firebase-core:15.0.2'
+//    implementation 'com.google.firebase:firebase-database:15.0.0'
+//    implementation 'com.google.firebase:firebase-crash:15.0.2'
+//    implementation 'com.google.firebase:firebase-auth:15.0.0'
+//    implementation 'com.google.firebase:firebase-storage:15.0.2'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    //  implementation 'com.google.firebase:firebase-core:16.0.8'
+// Add dependency
+    // implementation 'com.crashlytics.sdk.android:crashlytics:2.9.9'
+
+    //  implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    //  implementation 'com.google.android.gms:play-services-gcm:15.0.1'
+    //  implementation 'com.google.android.gms:play-services-location:15.0.1'
+
+
+    apply plugin: 'com.google.gms.google-services'
+}
